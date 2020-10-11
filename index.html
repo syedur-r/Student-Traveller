@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
+    <title>Student Traveller</title>
+    
+    <!-- Bootstrap CSS Library -->
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<!-- Navbar idea has been taken from YouTube https://www.youtube.com/watch?v=V_lAhqLXT9A -->
+<!-- I have added many changes to it such changing the colour sceheme and incorporating my 
+    own logo. -->
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!-- Welcome Section -->
+<section class="welcome" id="welcomeid">
+<div id="welcome">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="headerNavbar">
+        <a class="navbarlogo" href="#"><img src="img/StudentTraveller_Logo_Final.png" height="60" alt="Student Traveller Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav md-auto">
+                <li class="navbar-itinerary">
+                    <a class="nav-link" href="#welcome">Welcome</a>
+                </li>
+                <li class="navbar-itinerary">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="navbar-itinerary">
+                    <a class="nav-link" href="#destinations">Destinations</a>
+                </li>
+                <li class="navbar-itinerary">
+                    <a class="nav-link" href="#resources">Travel Resources</a>
+                </li>
+                <li class="navbar-itinerary">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!-- Beginning of Arrival Page Section -->
+    <section id="arrival" class="container-fluid">
+        <div class="container-fluid">
+            <div class="heading text-center">
+                <h1>Welcome to Student Traveller</h1>
+                <h3>Explore the world as a Student</h3>
+                <a id="exploreBtn" class="btn btn-outline-dark btn-lg" href="#about">Start Exploring</a>
+            </div>
+        </div>
+    </section>
+    <!-- End of Arrival Page Section -->
+</div>
+</section>
+<!-- End of Welcome Section -->
+
+
+<!-- About Section -->
+<section class="about" id="aboutid">
+<div id="about" class="about_equaliser">
+
+<div class="col-12 text-center">
+    <img  class="bounce aboutLogo" src="img/StudentTraveller_Logo_Final.png" height="200" alt="Student Traveller Logo">
+    
+    <!-- <img src="images/scroll.svg" alt="scroll down" class = "scroll hide-mobile show-desktop"> -->
+
+    <h1 class="about_title">What is Student Traveller?</h1>
+    <p class="about_paragraph">Student Traveller is a travel blog dedicated to students within the age range of 18-25 years. 
+        The students are ideally undergraduate or postgraduate students, who have successfully finished their 
+        first semester or summer exam and are now on a long break. They now want to depart on an adventurous and 
+        cheap travel holiday to either Europe or Asia. However, they have no idea which country to travel to, how 
+        to travel there for the cheapest price, or what to do in that country. 
+        <br><br>Student Traveller aims to provide students with an insight to destinations in Asia and Europe, as those 
+        countries tend to be cheap yet provide students with the best experiences. The blog also exhibits the beautiful
+        photography of the tourist attractions taken in those countries. 
+        Finally, the blog has a travel resources section that shows students how to backpack lightweight 
+        and efficiently, find the best flights and accommodation, and improve their photography. </p>
+        <a id="reportBtn" class="btn btn-outline-dark btn-lg" href="report.html">View Report</a>
+</div>
+
+</div>
+</section>
+<!-- End of About Section -->
+
+
+<!-- Destinations Section -->
+<section class="destinations" id="destinationsid">
+<div id="destinations" class="destinations_equaliser">
+<div class="col-12 text-center">
+    <div class="col-12">
+            <h3 class="destinations_title">Destinations</h3>
+        </div>
+        <div class="row text-center">
+    
+            <div class="col-md-6">
+                <div class="asia-hover-zoom">
+                    <a class="asiaBtn" href="asia.html"><img class="asia" src="img/forbiddencity.jpeg" height="350" alt="Image of Asia"></a>
+                </div>
+                <div class="asia_info">
+                    <h3 class="destinations_heading">Asia</h3>
+                    <p class="destinations_caption">Click to view Destinations in Asia.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="europe-hover-zoom">
+                    <a class="europeBtn" href="europe.html"><img class="europe" src="img/eiffeltower.jpeg" height="350" alt="Image of Europe"></a>
+                </div>
+                <div class="europe_info">
+                    <h3 class="destinations_heading">Europe</h3>
+                    <p class="destinations_caption">Click to view Destinations in Europe.</p>
+                </div>
+            </div>
+</div>
+</section>
+<!-- End of Destinations Section -->
+
+
+<!-- Travel Resources Section -->
+<section class="resources" id="resourcesid">
+<div id="resources" class="resources_equaliser">
+<section id="fixedresources" class="container-fluid">
+    <div class="container-fluid">
+    <!-- Start Expanding Container -->
+    <div>
+    <div class="row expand text-center">
+
+    <div class="col-12">
+        <h3 class="resources_title">Travel Resources</h3>
+    </div>
+
+    <div class="col-md-4">
+        <h3 class="resources_heading">Packing Lightly</h3>
+        <div class="packing_container">
+            <img class="suitcase" src="img/lightweight_packing.jpeg" height="150" alt="Picture of packing suitcase">
+        </div>
+        <p class="resources_1">Tips on how to pack lightly and efficiently.</p>
+    </div>
+
+    <div class="col-md-4">
+        <h3 class="resources_heading">Best Travel Deals</h3>
+        <div class="deals_container">
+                <img class="deals" src="img/traveldeals.jpg" height="150" alt="Picture of flight and accommodation deals">
+        </div>
+        <p class="resources_2">Finding the best flight and accommodation
+            deals.</p>
+    </div>
+
+    <div class="col-md-4">
+        <h3 class="resources_heading">Travel Photography</h3>
+        <div class="photography_container">
+                <img class="photography" src="img/travelphotography.jpeg" height="150" alt="Picture of travel photography">
+        </div>
+        <p class="resources_3">Tips on how to significantly improve 
+            travel photography.</p>
+    </div>
+
+    <div class="col-12 text-center">
+            <a id="btnResources " class="btn btn-outline-light btn-lg" href="resources.html">Find Out Now</a>
+     </div>
+    </div>
+    </div>
+    <!-- End Expanding Container -->
+
+    </div>
+</section>
+
+</div>
+</section>
+<!-- End of Travel Resources Section -->
+
+<!-- Start Contact Section -->
+<section class="contact" id="contactid">
+<div id="contact" class="contact_equaliser">
+
+<footer>
+<div class="row justify-content-center">
+
+    <div class="col-md-4">
+        <p><strong>Contact Me</strong></p>
+        <p>Syedur Rahman<br>020 7919 7171<br>student.traveller@gmail.com</p>
+        <br><p class="socials"><strong>Follow me on Social Media</strong></p>
+        
+        <a href="https://www.facebook.com/" target="_blank"><i 
+        class="fab fa-facebook-square"></i></a>
+        
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i 
+        class="fab fa-instagram"></i></a>
+        
+        <a href="https://accounts.snapchat.com/accounts/login?client_id=geo" 
+        target="_blank"><i class="fab fa-snapchat"></i></a>
+    </div>
+
+    <div class="col-md-4">
+            <div class="email">
+                <form action="index.html">
+                    <label for="email"><strong>Email Address</strong></label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Enter your Email Address">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+    </div>
+
+    <hr class="copyrighttext">
+    &copy; 2020 Student Traveller | Travel Blog.
+
+</div>
+</footer>
+
+</div>
+</section>
+<!-- End Contact Section -->
+
+<!-- jQuery Library and External JavaScript File -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="jquery-3.3.1.js"></script>
+<script src="js/index.js"></script>
+
+<!-- Bootstrap JS Library -->
+<script src="bootstrap4/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!-- MUST STAY HERE - OR ELSE NAV BAR WILL NOT FUNCTION! -->
+
+</body>
+</html>
