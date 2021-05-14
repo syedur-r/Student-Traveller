@@ -364,7 +364,7 @@ label {
 /* This selector adjusts the textbox for the email address */
 input[type="text"] {
   width: 90%;
-  height: fit-content;
+  height: 2.5em;
   border: 1px solid #707070;
   width: 20rem;
   padding: 1em;
