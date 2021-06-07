@@ -720,11 +720,6 @@ hr.copyrighttext {
       text-align: center;
    }
 
-   input[type="submit"] {
-      padding: 0.3em 0.3em;
-      width: 20%;
-   }
-
    /* ASIA, EUROPE, RESOURCES MOBILE VIEW */
 
    .continents_heading h1 {
@@ -948,11 +943,50 @@ hr.copyrighttext {
    section#fixedresources {
       height: calc(100vh + 38em);
    }
+   
+   input[type="submit"] {
+      padding: 0.3em 0.3em;
+      width: calc(100% - 80px);
+   }
+}
+
+@media (min-width: 767px) {
+   h3.destinations_title {
+      margin-top: calc(100vh / 6);
+   }
+   
+   .resources_title {
+      margin-top: calc(100vh / 10);
+   }
+   
+   section#fixedresources {
+      height: calc(100vh + 5em);
+   }
+   
+   input[type="submit"] {
+      width: 30%;
+   }
 }
 
 @media (min-width: 1024px) {
    section#fixedresources {
       height: calc(100vh + 5em);
+   }
+   
+   .aboutLogo {
+      margin-top: calc(100vh / 6);
+   }
+   
+   h3.destinations_title {
+      margin-top: calc(100vh / 4);
+   }
+   
+   .resources_title {
+      margin-top: calc(100vh / 4);
+   }
+   
+   input[type="submit"] {
+      width: 20%;
    }
 }
 
@@ -961,7 +995,15 @@ hr.copyrighttext {
       margin-top: calc(100vh / 10);
    }
 
+   h3.destinations_title {
+      margin-top: 4rem;
+   }
+   
    .resources_title {
       margin-top: calc(100vh / 8);
+   }
+   
+   input[type="submit"] {
+      width: 20%;
    }
 }
