@@ -80,8 +80,10 @@ body {
 
 }
 
-h1.welcome {
-    width: calc(100vw - 50px);
+h1.welcome,
+h3.explore,
+.exploreBtn {
+   width: calc(100vw - 50px);
 }
 
 .heading h3 {
@@ -925,19 +927,24 @@ hr.copyrighttext {
    input[type="submit"] {
       padding-right: 3.3rem;
    }
-   
+
    h1.welcome {
-    width: 100vw;
+      width: calc(100vw - 25px);
    }
-   
-   section#aboutid, section#destinationsid {
+
+   h3.explore, .exploreBtn {
+      width: 100vw;
+   }
+
+   section#aboutid,
+   section#destinationsid {
       height: calc(100vh + 150px);
    }
-   
+
    .resources_title {
       margin-top: .5em;
    }
-   
+
    section#fixedresources {
       height: calc(100vh + 38em);
    }
@@ -949,11 +956,11 @@ hr.copyrighttext {
    }
 }
 
-@media (min-width: 1682px) {   
+@media (min-width: 1682px) {
    .aboutLogo {
       margin-top: calc(100vh / 10);
    }
-   
+
    .resources_title {
       margin-top: calc(100vh / 8);
    }
