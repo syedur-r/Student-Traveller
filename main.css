@@ -416,6 +416,7 @@ hr.copyrighttext {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh
 }
 
 #asia h1 {
@@ -440,6 +441,7 @@ hr.copyrighttext {
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
 
 #europe h1 {
@@ -552,6 +554,7 @@ hr.copyrighttext {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
 
 #detailed_resources h1 {
