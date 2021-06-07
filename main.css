@@ -921,9 +921,31 @@ hr.copyrighttext {
    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 375px) {
    input[type="submit"] {
       padding-right: 3.3rem;
+   }
+   
+   h1.welcome {
+    width: 100vw;
+   }
+   
+   section#aboutid, section#destinationsid {
+      height: calc(100vh + 150px);
+   }
+   
+   .resources_title {
+      margin-top: .5em;
+   }
+   
+   section#fixedresources {
+      height: calc(100vh + 38em);
+   }
+}
+
+@media (min-width: 1024px) {
+   section#fixedresources {
+      height: calc(100vh + 5em);
    }
 }
 
