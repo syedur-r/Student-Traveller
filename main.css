@@ -928,13 +928,11 @@ hr.copyrighttext {
       padding-right: 3.3rem;
    }
 
-/*
    h1.welcome {
-      width: calc(100vw - 25px);
+      width: calc(100vw - 30px);
    }
-*/
 
-   h1.welcome, h3.explore, .exploreBtn {
+   h3.explore, .exploreBtn {
       width: 100vw;
    }
 
