@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body {
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
-  overflow-y: scroll;
+   overflow: hidden;
+   font-family: "Montserrat", sans-serif;
+   color: #fff;
+   overflow-y: scroll;
 }
 
 /* NAVIGATION BAR */
@@ -19,118 +19,126 @@ body {
     own logo. --> */
 
 .navbar {
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.3) !important;
+   font-weight: 700;
+   font-size: 0.9rem;
+   letter-spacing: 0.1rem;
+   background: rgba(0, 0, 0, 0.3) !important;
 }
 
 .navbarlogo img {
-  height: 3.1rem;
-  padding-right: 2rem;
-  padding-top: 0;
+   height: 3.1rem;
+   padding-right: 2rem;
+   padding-top: 0;
 }
 
 .navbar-nav li {
-  padding-right: 0.7rem;
+   padding-right: 0.7rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
+   color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #8bd8bd;
+   color: #8bd8bd;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #8bd8bd;
+   color: #8bd8bd;
 }
 
 /* WELCOME SECTION */
 
 #arrival {
-  /* This selector adds the fixed background for the welcome page */
+   /* This selector adds the fixed background for the welcome page */
 
-  padding-bottom: 51.5rem;
-  background-image: url(img/greatwall.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   padding-bottom: 51.5rem;
+   background-image: url(img/greatwall.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
 }
 
 .heading {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 35%;
-  z-index: 1;
-  color: #fff;
-  text-transform: uppercase;
+   width: 100%;
+   max-width: 100%;
+   position: absolute;
+   top: 35%;
+   z-index: 1;
+   color: #fff;
+   text-transform: uppercase;
 }
 
 .heading h1 {
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem #000;
-  padding-bottom: 1rem;
+   font-size: 3.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2rem;
+   text-shadow: 0.1rem 0.1rem 0.8rem #000;
+   padding-bottom: 1rem;
+
+}
+
+h1.welcome {
+    width: calc(100vw - 50px);
 }
 
 .heading h3 {
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem #000;
-  padding-bottom: 1.6rem;
+   font-size: 2rem;
+   text-shadow: 0.1rem 0.1rem 0.5rem #000;
+   padding-bottom: 1.6rem;
 }
 
 #exploreBtn {
-  border-width: medium;
-  border-color: white;
-  color: white;
-  padding: 0.6rem 1.3rem;
-  font-size: 1.1rem;
-  cursor: pointer;
+   border-width: medium;
+   border-color: white;
+   color: white;
+   padding: 0.6rem 1.3rem;
+   font-size: 1.1rem;
+   cursor: pointer;
 }
 
 /* WELCOME PAGE TRANSITION */
 
 .heading {
-  /* animation is short hand property that allows you to specify multiple values
+   /* animation is short hand property that allows you to specify multiple values
     
     (e.g. animation: name duration forwards(stops the animation from looping))
     
     */
 
-  animation: headingFadeIn 2s forwards;
+   animation: headingFadeIn 2s forwards;
 }
 
 @keyframes headingFadeIn {
-  /* from and to takes you from A to B */
+   /* from and to takes you from A to B */
 
-  from {
-    opacity: 0;
-    transform: translateY(-2em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+   from {
+      opacity: 0;
+      transform: translateY(-2em);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
 
 #exploreBtn {
-  animation: buttonFadeIn 2s forwards;
+   animation: buttonFadeIn 2s forwards;
 }
 
 @keyframes buttonFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-2em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+   from {
+      opacity: 0;
+      transform: translateY(-2em);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
 }
 
 /* END OF TRANSITION */
@@ -138,127 +146,129 @@ body {
 /* ABOUT SECTION */
 
 .about_equaliser:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -5rem;
+   display: block;
+   content: "";
+   height: 4rem;
+   margin-top: -5rem;
 }
 
 .about {
-  background: url(img/aboutbackground.jpg);
-  padding: 5rem 5rem 5rem 5rem;
-  margin-bottom: 4rem;
-  padding-bottom: 10rem;
+   background: url(img/aboutbackground.jpg);
+   padding: 5rem 5rem 5rem 5rem;
+   margin-bottom: 4rem;
+   padding-bottom: 10rem;
+   height: calc(100vh + 100px);
 }
 
 .aboutLogo {
-  padding-top: 2rem;
+   padding-top: 2rem;
 }
 
 /* Adds animation to the logo */
 .bounce {
-  animation: move 1s infinite alternate;
+   animation: move 1s infinite alternate;
 }
 
 @keyframes move {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(20px);
-  }
+   from {
+      transform: translateY(0px);
+   }
+
+   to {
+      transform: translateY(20px);
+   }
 }
 
 .about h1 {
-  font-size: 2.4rem;
-  padding-top: 2rem;
-  text-decoration: underline;
+   font-size: 2.4rem;
+   padding-top: 2rem;
+   text-decoration: underline;
 }
 
 #reportBtn {
-  margin-top: 1rem;
-  border-color: white;
-  color: white;
+   margin-top: 1rem;
+   border-color: white;
+   color: white;
 }
 
 /* DESTINATION SECTION */
 
 .destinations_equaliser:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -9.1rem;
+   display: block;
+   content: "";
+   height: 4rem;
+   margin-top: -9.1rem;
 }
 
 .destinations {
-  background: url(img/destinationsmap.png);
-  background-size: cover;
-  padding-top: 5rem;
-  padding-bottom: 12.5rem;
-  padding-top: 0;
-  margin: 0;
+   background: url(img/destinationsmap.png);
+   background-size: cover;
+   padding-top: 5rem;
+   padding-bottom: 12.5rem;
+   padding-top: 0;
+   margin: 0;
 }
 
 h3.destinations_title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 4rem;
-  padding-bottom: 2rem;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-align: center;
+   margin-top: 4rem;
+   padding-bottom: 2rem;
 }
 
 .destinations_heading {
-  color: white;
-  font-size: 1.5rem;
-  padding-bottom: 0.4rem;
+   color: white;
+   font-size: 1.5rem;
+   padding-bottom: 0.4rem;
 }
 
 .destinations p {
-  font-size: 1.1rem;
+   font-size: 1.1rem;
 }
 
 /* ADDING HOVER ZOOM TO ASIA */
 
 .asia-hover-zoom {
-  overflow: hidden;
+   overflow: hidden;
 }
 
 .asia-hover-zoom img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
+   transition: all 0.3s ease-out;
+   cursor: pointer;
 }
 
 .asia-hover-zoom:hover img {
-  transform: scale(1.25);
+   transform: scale(1.25);
 }
 
 .asia_info {
-  margin-top: 1rem;
+   margin-top: 1rem;
 }
 
 /* ADDING HOVER ZOOM TO EUROPE */
 
 .europe-hover-zoom {
-  overflow: hidden;
+   overflow: hidden;
 }
 
 .europe-hover-zoom img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  transition: all 0.3s ease-out;
-  cursor: pointer;
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
+   transition: all 0.3s ease-out;
+   cursor: pointer;
 }
 
 .europe-hover-zoom:hover img {
-  transform: scale(1.25);
+   transform: scale(1.25);
 }
 
 .europe_info {
-  margin-top: 1rem;
+   margin-top: 1rem;
 }
 
 /* END OF ADDING ANIMATION */
@@ -266,648 +276,660 @@ h3.destinations_title {
 /* TRAVEL RESOURCES SECTION */
 
 .resources_equaliser:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -9rem;
+   display: block;
+   content: "";
+   margin-top: -9rem;
 }
 
 #fixedresources {
-  padding-bottom: 4rem;
-  background-image: url(img/travelResources.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
+   padding-bottom: 4rem;
+   background-image: url(img/travelResources.png);
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: -1;
+   height: calc(100vh + 80px);
 }
 
 .expand {
-  padding: 7rem 2rem;
+   padding: 7rem 2rem;
 }
 
 .resources_title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 4rem;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 4rem;
+   margin-top: calc(100vh / 12)
 }
 
 .resources_heading {
-  margin-bottom: 2rem;
+   margin-bottom: 2rem;
 }
 
 .resources_1 {
-  margin-top: 1.5rem;
+   margin-top: 1.5rem;
 }
 
 .resources_2 {
-  margin-top: 1.5rem;
+   margin-top: 1.5rem;
 }
 
 img.deals {
-  width: 12rem;
-  margin-left: 0.5rem;
+   width: 12rem;
+   margin-left: 0.5rem;
 }
 
 .resources_3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
 }
 
 #btnResources {
-  width: auto;
-  height: 100%;
+   width: auto;
+   height: 100%;
 }
 
 /* CONTACT SECTION */
 
 .contact_equaliser:before {
-  display: block;
-  content: "";
-  height: 4rem;
-  margin-top: -9.1rem;
+   display: block;
+   content: "";
+   height: 4rem;
+   margin-top: -9.1rem;
 }
 
 footer {
-  background: url(img/aboutbackground.jpg);
-  color: white;
-  padding: 3rem 0 2rem;
+   background: url(img/aboutbackground.jpg);
+   color: white;
+   padding: 3rem 0 2rem;
 }
 
 footer .socials {
-  margin-bottom: -0.5rem;
+   margin-bottom: -0.5rem;
 }
 
 footer a {
-  color: white;
+   color: white;
 }
 
 footer svg.svg-inline--fa {
-  font-size: 1.6rem;
-  margin: 1.2rem 0.5rem 0 0;
+   font-size: 1.6rem;
+   margin: 1.2rem 0.5rem 0 0;
 }
 
 footer svg.svg-inline--fa:hover {
-  color: #8bd8bd !important;
+   color: #8bd8bd !important;
 }
 
 /* This specific selector styles the send button for the email form */
 label {
-  color: white;
-  font-weight: bold;
-  display: block;
-  font-size: 1.2em;
+   color: white;
+   font-weight: bold;
+   display: block;
+   font-size: 1.2em;
 }
 
 /* This selector adjusts the textbox for the email address */
 input[type="text"] {
-  width: 90%;
-  height: 2.5em;
-  border: 1px solid #707070;
-  width: 20rem;
-  padding: 1em;
-  box-sizing: border-box; /* Fixes width of textbox and gets rid of horizontal scroll bar */
-  border-radius: 0.5em;
+   width: 90%;
+   height: 2.4em;
+   border: 1px solid #707070;
+   width: 20rem;
+   padding: 1em;
+   box-sizing: border-box;
+   /* Fixes width of textbox and gets rid of horizontal scroll bar */
+   border-radius: 0.5em;
 }
 
 input[type="submit"] {
-  background-color: #8bd8bd;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  height: fit-content;
-  font-size: 1.1em;
-  margin-top: 1em;
-  padding: 0.3em 0.3em;
-  width: 10%;
-  cursor: pointer;
+   background-color: #8bd8bd;
+   border: none;
+   border-radius: 0.5em;
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   height: fit-content;
+   font-size: 1.1em;
+   margin-top: 1em;
+   padding: 0.3em 0.3em;
+   width: 10%;
+   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #59a188;
+   background-color: #59a188;
 }
 
 hr.copyrighttext {
-  width: 100%;
-  margin-top: 3rem;
+   width: 100%;
+   margin-top: 3rem;
 }
 
 /* ASIA AND EUROPE AND MORE RESOURCES */
 
 #asia {
-  padding-bottom: 51.5rem;
-  background: url(img/asia/forbiddencity.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   padding-bottom: 51.5rem;
+   background: url(img/asia/forbiddencity.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 #asia h1 {
-  margin-top: 1rem;
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem #000;
-  padding-bottom: 1rem;
+   margin-top: 1rem;
+   font-size: 3.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2rem;
+   text-shadow: 0.1rem 0.1rem 0.8rem #000;
+   padding-bottom: 1rem;
 }
 
 #asia a,
 #europe a,
 #detailed_resources a {
-  margin-left: -5rem;
-  margin-top: -30rem;
+   margin-left: -5rem;
+   margin-top: -30rem;
 }
 
 #europe {
-  padding-bottom: 51.5rem;
-  background: url(img/europe/eiffeltower.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
+   padding-bottom: 51.5rem;
+   background: url(img/europe/eiffeltower.png);
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 #europe h1 {
-  margin-top: 1rem;
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem #000;
-  padding-bottom: 1rem;
+   margin-top: 1rem;
+   font-size: 3.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2rem;
+   text-shadow: 0.1rem 0.1rem 0.8rem #000;
+   padding-bottom: 1rem;
 }
 
 .continents_heading,
 .detailedresources_heading {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 35%;
-  z-index: 1;
-  color: #fff;
-  text-transform: uppercase;
+   width: 100%;
+   max-width: 100%;
+   position: absolute;
+   top: 35%;
+   z-index: 1;
+   color: #fff;
+   text-transform: uppercase;
 }
 
 .continents_heading h1,
 .detailedresources_heading h1 {
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem #000;
-  padding-bottom: 1rem;
-  margin-top: -5rem;
+   font-size: 3.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2rem;
+   text-shadow: 0.1rem 0.1rem 0.8rem #000;
+   padding-bottom: 1rem;
+   margin-top: -5rem;
 }
 
 .continents_heading h3 {
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem #000;
-  padding-bottom: 1.6rem;
+   font-size: 2rem;
+   text-shadow: 0.1rem 0.1rem 0.5rem #000;
+   padding-bottom: 1.6rem;
 }
 
 .continents,
 .packing {
-  background: url(img/destinationsmap.png);
-  background-size: cover;
-  padding-bottom: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
+   background: url(img/destinationsmap.png);
+   background-size: cover;
+   padding-bottom: 0.5rem;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .continents_title,
 .packing_title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 5rem;
-  margin-top: -4rem;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 5rem;
+   margin-top: -4rem;
 }
 
 .countries_heading,
 .packing_heading {
-  margin-bottom: 2rem;
+   margin-bottom: 2rem;
 }
 
 .country_1,
 .tip_1 {
-  margin-top: 1.5rem;
-  padding-bottom: 0;
+   margin-top: 1.5rem;
+   padding-bottom: 0;
 }
 
 .country_2,
 .tip_2 {
-  margin-top: 1.5rem;
-  padding-bottom: 0;
+   margin-top: 1.5rem;
+   padding-bottom: 0;
 }
 
 .country_3,
 .tip_3 {
-  margin-top: 1.5rem;
-  padding-bottom: 0;
+   margin-top: 1.5rem;
+   padding-bottom: 0;
 }
 
 #TouristAttractions {
-  padding-bottom: 1.2rem;
-  background: url(img/aboutbackground.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   padding-bottom: 1.2rem;
+   background: url(img/aboutbackground.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .countries_title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 5rem;
-  margin-top: -5rem;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 5rem;
+   margin-top: -5rem;
 }
 
 .countries_title2 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
+   font-size: 1.9rem;
+   font-weight: 700;
+   text-align: center;
+   margin: 0;
 }
 
 /* MORE RESOURCES */
 
 #detailed_resources {
-  padding-bottom: 51.5rem;
-  background: url(img/travelResources.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   padding-bottom: 51.5rem;
+   background: url(img/travelResources.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 #detailed_resources h1 {
-  margin-top: 1rem;
-  font-size: 3.8rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-shadow: 0.1rem 0.1rem 0.8rem #000;
-  padding-bottom: 1rem;
+   margin-top: 1rem;
+   font-size: 3.8rem;
+   font-weight: 700;
+   letter-spacing: 0.2rem;
+   text-shadow: 0.1rem 0.1rem 0.8rem #000;
+   padding-bottom: 1rem;
 }
 
 .packingContainer,
 .dealsContainer {
-  background: url(img/aboutbackground.jpg);
-  background-size: cover;
-  padding-bottom: 0.5rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: -8rem;
+   background: url(img/aboutbackground.jpg);
+   background-size: cover;
+   padding-bottom: 0.5rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-bottom: -8rem;
 }
 
 .photographyContainer {
-  background: url(img/aboutbackground.jpg);
-  background-size: cover;
-  padding-bottom: -50rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: -80rem;
+   background: url(img/aboutbackground.jpg);
+   background-size: cover;
+   padding-bottom: -50rem;
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-bottom: -80rem;
 }
 
 .tips_introduction {
-  font-size: 1.2rem;
-  margin-top: -3rem;
-  margin-bottom: 3.5rem;
+   font-size: 1.2rem;
+   margin-top: -3rem;
+   margin-bottom: 3.5rem;
 }
 
 /* Hyperlinks for the youtube videos */
 #packinglink,
 #clotheslink {
-  color: #8bd8bd;
-  text-decoration: underline;
+   color: #8bd8bd;
+   text-decoration: underline;
 }
 
 /* MOBILE VIEW */
 
 @media (max-width: 767px) {
-  #arrival {
-    padding-bottom: 51.5rem;
-  }
+   #arrival {
+      padding-bottom: 51.5rem;
+   }
 
-  .navbar-brand img {
-    height: 2.2rem;
-  }
+   .navbar-brand img {
+      height: 2.2rem;
+   }
 
-  .heading h1 {
-    font-size: 2.3rem;
-    letter-spacing: 0.1rem;
-    padding-bottom: 0.5rem;
-    padding-right: 4rem;
-    margin-right: 1.5rem;
-  }
+   .heading h1 {
+      font-size: 2.3rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 4rem;
+      margin-right: 1.5rem;
+   }
 
-  .heading h3 {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
-    padding-right: 4rem;
-  }
+   .heading h3 {
+      font-size: 1rem;
+      padding-bottom: 1.2rem;
+      padding-right: 4rem;
+   }
 
-  #exploreBtn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    margin-right: 4rem;
-  }
+   #exploreBtn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-right: 4rem;
+   }
 
-  .aboutLogo {
-    padding-top: 2rem;
-    height: 7rem;
-  }
+   .aboutLogo {
+      padding-top: 2rem;
+      height: 7rem;
+   }
 
-  .about h1 {
-    font-size: 1.4rem;
-  }
+   .about h1 {
+      font-size: 1.4rem;
+   }
 
-  .about p {
-    font-size: 0.9rem;
-    margin-right: -3rem;
-    margin-left: -3rem;
-  }
+   .about p {
+      font-size: 0.9rem;
+      margin-right: -3rem;
+      margin-left: -3rem;
+   }
 
-  #reportBtn {
-    font-size: 1rem;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
-  }
+   #reportBtn {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+   }
 
-  .about {
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-  }
+   .about {
+      margin-bottom: 4rem;
+      padding-bottom: 2rem;
+   }
 
-  .destinations_equaliser:before {
-    margin-top: -6.6rem;
-  }
+   .destinations_equaliser:before {
+      margin-top: -6.6rem;
+   }
 
-  .destinations {
-    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
-    margin-top: -4rem;
-    padding-bottom: 10rem;
-  }
+   .destinations {
+      padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+      margin-top: -4rem;
+      padding-bottom: 10rem;
+   }
 
-  h3.destinations_title {
-    margin-top: 2rem;
-    margin-left: 0.5rem;
-  }
+   h3.destinations_title {
+      margin-top: 2rem;
+      margin-left: 0.5rem;
+   }
 
-  .asia-hover-zoom img,
-  .europe-hover-zoom img {
-    width: 100%;
-  }
+   .asia-hover-zoom img,
+   .europe-hover-zoom img {
+      width: 100%;
+   }
 
-  .asia-hover-zoom,
-  .europe-hover-zoom {
-    margin-top: 2rem;
-    margin-right: 0;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    margin-left: 0.5rem;
-    height: 30%;
-  }
+   .asia-hover-zoom,
+   .europe-hover-zoom {
+      margin-top: 2rem;
+      margin-right: 0;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      margin-left: 0.5rem;
+      height: 30%;
+   }
 
-  .asia-hover-zoom {
-    height: 350px;
-    overflow: hidden;
-    margin-bottom: 6rem;
-    padding-bottom: 2rem;
-  }
+   .asia-hover-zoom {
+      height: 350px;
+      overflow: hidden;
+      margin-bottom: 6rem;
+      padding-bottom: 2rem;
+   }
 
-  .destinations_heading {
-    margin: -4rem 0 0 0;
-  }
+   .destinations_heading {
+      margin: -4rem 0 0 0;
+   }
 
-  .europe-hover-zoom {
-    padding-top: 4rem;
-  }
+   .europe-hover-zoom {
+      padding-top: 4rem;
+   }
 
-  .resources_3 {
-    margin-bottom: 5rem;
-  }
+   .resources_3 {
+      margin-bottom: 5rem;
+   }
 
-  footer {
-    text-align: center;
-  }
+   footer {
+      text-align: center;
+   }
 
-  .email {
-    padding-top: 2rem;
-  }
+   .email {
+      padding-top: 2rem;
+   }
 
-  input[type="text"] {
-    width: 80%;
-    height: 2rem;
-    text-align: center;
-  }
+   input[type="text"] {
+      width: 80%;
+      height: 2rem;
+      text-align: center;
+   }
 
-  input[type="submit"] {
-    padding: 0.3em 0.3em;
-    width: 20%;
-  }
+   input[type="submit"] {
+      padding: 0.3em 0.3em;
+      width: 20%;
+   }
 
-  /* ASIA, EUROPE, RESOURCES MOBILE VIEW */
+   /* ASIA, EUROPE, RESOURCES MOBILE VIEW */
 
-  .continents_heading h1 {
-    font-size: 2.3rem;
-    letter-spacing: 0.1rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3.5rem;
-  }
+   .continents_heading h1 {
+      font-size: 2.3rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 3.5rem;
+   }
 
-  #detailed_resources h1 {
-    font-size: 3rem;
-    letter-spacing: 0.1rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3.5rem;
-  }
+   #detailed_resources h1 {
+      font-size: 3rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 3.5rem;
+   }
 
-  .continents_heading h3 {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
-    padding-right: 4rem;
-  }
+   .continents_heading h3 {
+      font-size: 1rem;
+      padding-bottom: 1.2rem;
+      padding-right: 4rem;
+   }
 
-  #asia a,
-  #europe a,
-  #detailed_resources a {
-    margin-left: -4rem;
-    margin-top: -30rem;
-  }
+   #asia a,
+   #europe a,
+   #detailed_resources a {
+      margin-left: -4rem;
+      margin-top: -30rem;
+   }
 
-  .tips_introduction {
-    font-size: 1rem;
-  }
+   .tips_introduction {
+      font-size: 1rem;
+   }
 
-  img.suitcase,
-  img.clothes,
-  img.toiletries {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 11rem;
-  }
+   img.suitcase,
+   img.clothes,
+   img.toiletries {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 11rem;
+   }
 
-  .tip_1,
-  .tip_2,
-  .tip_3 {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    padding-bottom: 1.5rem;
-  }
+   .tip_1,
+   .tip_2,
+   .tip_3 {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      padding-bottom: 1.5rem;
+   }
 
-  img.skyscanner,
-  img.airbnb {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 12rem;
-  }
+   img.skyscanner,
+   img.airbnb {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 12rem;
+   }
 
-  iframe {
-    width: 300px;
-    height: 200px;
-  }
+   iframe {
+      width: 300px;
+      height: 200px;
+   }
 }
 
 /* TABLET VIEW */
 
 @media (max-width: 991px) {
-  .navbar-nav li {
-    padding-right: 0.2rem;
-  }
+   .navbar-nav li {
+      padding-right: 0.2rem;
+   }
 
-  #arrival {
-    padding-bottom: 64.5rem;
-  }
+   #arrival {
+      padding-bottom: 64.5rem;
+   }
 
-  .heading h1 {
-    padding-right: 2rem;
-  }
+   .heading h1 {
+      padding-right: 2rem;
+   }
 
-  .heading h3 {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
-    padding-right: 4rem;
-  }
+   .heading h3 {
+      font-size: 1rem;
+      padding-bottom: 1.2rem;
+      padding-right: 4rem;
+   }
 
-  #exploreBtn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    margin-right: 4rem;
-  }
+   #exploreBtn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-right: 4rem;
+   }
 
-  /* .asia-hover-zoom,
+   /* .asia-hover-zoom,
   .europe-hover-zoom {
     margin-bottom: 6rem;
   } */
 
-  .asia-hover-zoom,
-  .europe-hover-zoom {
-    margin-top: 2rem;
-    margin-right: 0;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-    height: 100%;
-  }
+   .asia-hover-zoom,
+   .europe-hover-zoom {
+      margin-top: 2rem;
+      margin-right: 0;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      height: 100%;
+   }
 
-  h3.destinations_title {
-    margin-top: 0.5rem;
-  }
+   h3.destinations_title {
+      margin-top: 0.5rem;
+   }
 
-  .destinations_heading {
-    margin-top: -4rem;
-  }
+   .destinations_heading {
+      margin-top: -4rem;
+   }
 
-  /* ASIA, EUROPE, RESOURCES MEDIA QUERIES */
+   /* ASIA, EUROPE, RESOURCES MEDIA QUERIES */
 
-  .continents_heading h1,
-  .detailedresources_heading h1 {
-    font-size: 2.3rem;
-    letter-spacing: 0.1rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3.5rem;
-  }
+   .continents_heading h1,
+   .detailedresources_heading h1 {
+      font-size: 2.3rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 3.5rem;
+   }
 
-  .continents_heading h3 {
-    font-size: 1rem;
-    padding-bottom: 1.2rem;
-    padding-right: 4rem;
-  }
+   .continents_heading h3 {
+      font-size: 1rem;
+      padding-bottom: 1.2rem;
+      padding-right: 4rem;
+   }
 
-  #asia a,
-  #europe a,
-  #detailed_resources a {
-    margin-left: -4rem;
-    margin-top: -30rem;
-  }
+   #asia a,
+   #europe a,
+   #detailed_resources a {
+      margin-left: -4rem;
+      margin-top: -30rem;
+   }
 
-  img.china,
-  img.malaysia,
-  img.singapore,
-  img.france,
-  img.turkey,
-  img.italy {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 10rem;
-    width: 13rem;
-  }
+   img.china,
+   img.malaysia,
+   img.singapore,
+   img.france,
+   img.turkey,
+   img.italy {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 10rem;
+      width: 13rem;
+   }
 
-  img.greatwall,
-  img.thebund,
-  img.forbiddencity,
-  img.petronas,
-  img.batucaves,
-  img.menaraKL,
-  img.marinabay,
-  img.gardensbythebay,
-  img.singaporeflyer {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 8rem;
-    width: 8rem;
-  }
+   img.greatwall,
+   img.thebund,
+   img.forbiddencity,
+   img.petronas,
+   img.batucaves,
+   img.menaraKL,
+   img.marinabay,
+   img.gardensbythebay,
+   img.singaporeflyer {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 8rem;
+      width: 8rem;
+   }
 
-  img.eiffeltower,
-  img.louvre,
-  img.champselysées,
-  img.bluemosque,
-  img.grandbazaar,
-  img.hagiasophia,
-  img.colloseum,
-  img.rialtobridge,
-  img.cinqueterre {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 8rem;
-    width: 8rem;
-  }
+   img.eiffeltower,
+   img.louvre,
+   img.champselysées,
+   img.bluemosque,
+   img.grandbazaar,
+   img.hagiasophia,
+   img.colloseum,
+   img.rialtobridge,
+   img.cinqueterre {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 8rem;
+      width: 8rem;
+   }
 
-  img.suitcase,
-  img.clothes,
-  img.toiletries {
-    margin-top: -0.75rem;
-    margin-right: 0;
-    padding-bottom: -0.75rem;
-    margin-left: 0.5rem;
-    height: 10rem;
-    width: 13rem;
-  }
+   img.suitcase,
+   img.clothes,
+   img.toiletries {
+      margin-top: -0.75rem;
+      margin-right: 0;
+      padding-bottom: -0.75rem;
+      margin-left: 0.5rem;
+      height: 10rem;
+      width: 13rem;
+   }
 }
 
 @media (min-width: 768px) {
-  input[type="submit"] {
-    padding-right: 3.3rem;
-  }
+   input[type="submit"] {
+      padding-right: 3.3rem;
+   }
+}
+
+@media (min-width: 1682px) {   
+   .aboutLogo {
+      margin-top: calc(100vh / 10);
+   }
+   
+   .resources_title {
+      margin-top: calc(100vh / 8);
+   }
 }
